@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio 페이지입니다.</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.9/tailwind.min.css">
+<!-- 폰트어썸 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<!-- css 연결 -->
+<link rel="stylesheet" href="portfolio.css">
+<!-- js 연결 -->
+<script src="common.js" defer></script>
+</head>
+<body>
+  <section class="section section-1">
+    <div class="part-group">
+      <div class="part-head">
+        <div class="part part-1" onmouseenter="Part__showPart(1);">01 PERSONAL WEBSITE</div>
+        <div class="part part-2" onmouseenter="Part__showPart(2);">02 WEBSITE RENEWAL</div>
+        <div class="part part-3" onmouseenter="Part__showPart(3);">03 RESPONSIVE WEB DESIGN</div>
+        <div class="part part-4" onmouseenter="Part__showPart(4);">04 MOBILE  UI&UX</div>
+      </div>
+      <div class="part-nav">
+        <div class="btn-left" onclick="Part__showPartPrev();">
+          <span><i class="fas fa-angle-up"></i></span>
+        </div>
+        <div class="btn-right" onclick="Part__showPartNext();">
+          <span><i class="fas fa-angle-down"></i></span>
+        </div>
+      </div>
+      <div class="part-body">
+        <div class="part part-1">
+          <div class="space"></div>
+          <div class="right-bg bg-top-to-bttom" style="background-image:url(https://picsum.photos/id/137/1000/1500);"></div>
+        </div>
+        <div class="part part-2">
+          <div class="space"></div>
+          <div class="right-bg bg-bottom-to-top" style="background-image:url(https://picsum.photos/id/117/1000/1500);"></div>
+        </div>
+        <div class="part part-3">
+          <div class="space"></div>
+          <div class="right-bg bg-left-to-right" style="background-image:url(https://picsum.photos/id/139/1000/1500);"></div>
+        </div>
+        <div class="part part-4">
+          <div class="space"></div>
+          <div class="right-bg bg-right-to-left" style="background-image:url(https://picsum.photos/id/140/1000/1500);"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

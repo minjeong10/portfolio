@@ -1,0 +1,198 @@
+/* 전체 */
+.section {
+  width:1920px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.section-1 {
+  position:relative;
+
+}
+
+/* 왼쪽 메뉴 */
+.part-head {
+  position:absolute;
+  top:50%;
+  left:50px;
+  transform:translateY(-50%);
+  font-size:2rem;
+  font-weight:bold;
+  z-index:100;
+  cursor:pointer;
+}
+
+.part-head > div {
+  padding:20px 0 ;
+}
+
+.part-head > div:first-child {
+  padding-top:0;
+}
+
+.part-head > div:last-child {
+  padding-bottom:0;
+}
+
+.part-head > .part.active {
+  color:white;
+}
+
+
+/* 이미지 움직이기 */
+
+.part-body > .part {
+  width:600px;
+  height:960px;
+  min-height:960px;
+  display:none;
+  position:relative;
+}
+
+.part-body > .part.part-1 {
+  background-color:darkgreen;
+}
+
+.part-body > .part.part-2 {
+  background-color:green;
+}
+
+.part-body > .part.part-3 {
+  background-color:blue;
+}
+
+.part-body > .part.part-4 {
+  background-color:pink;
+}
+
+.part-body > .part.active {
+  display:block;
+}
+
+.part-body > .part .right-bg {
+  position:absolute;
+  top:0;
+  width:283px;
+  height:100%;
+  right:-217.2%;
+  animation-duration:10s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.part-body > .part .right-bg.bg-top-to-bttom {
+  animation-name: bg-top-to-bttom;
+}
+
+.part-body > .part .right-bg.bg-bottom-to-top {
+  animation-name: bg-bottom-to-top;
+}
+
+.part-body > .part .right-bg.bg-left-to-right {
+  animation-name: bg-left-to-right;
+}
+
+.part-body > .part .right-bg.bg-right-to-left {
+  animation-name: bg-right-to-left;
+}
+
+@keyframes bg-top-to-bttom {
+  0% {
+    background-position:50% 0;
+  }
+
+  100% {
+    background-position:50% 100%;
+  }
+}
+
+@keyframes bg-bottom-to-top {
+  0% {
+    background-position:50% 100%;
+  }
+
+  100% {
+    background-position:50% 0;
+  }
+}
+
+@keyframes bg-left-to-right {
+  0% {
+    background-position:0% 50%;
+  }
+
+  100% {
+    background-position:100% 50%;
+  }
+}
+
+@keyframes bg-right-to-left {
+  0% {
+    background-position:100% 50%;
+  }
+
+  100% {
+    background-position:0 50%;
+  }
+}
+
+/* 버튼 */
+.part-nav {
+  display:flex;
+  position:absolute;
+  width:200px;
+  top:600px;
+  right:300px;
+  transform:translateX(50%);
+  z-index:10;
+  cursor:pointer;
+}
+
+.part-nav > div {
+  width:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:2rem;
+  user-select:none;
+}
+
+.part-nav > div:nth-child(1) {
+  color:white;
+}
+
+
+.part-nav > div:last-child {
+  background-color:white;
+}
+
+.part-nav > div::after {
+  content:"";
+  display:block;
+  padding-top:100%;
+}
+
+.part-group[data-no="1"] .part-nav > div:nth-child(1) {
+  background-color:darkgreen;
+}
+
+.part-group[data-no="2"] .part-nav > div:nth-child(1) {
+  background-color:green;
+}
+
+.part-group[data-no="3"] .part-nav > div:nth-child(1) {
+  background-color:blue;
+}
+
+.part-group[data-no="4"] .part-nav > div:nth-child(1) {
+  background-color:pink;
+}
+
+/* 가운데부분 */
+.space {
+  position:absolute;
+  width:1020px;
+  height:960px;
+  right:-170%;
+}

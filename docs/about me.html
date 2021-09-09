@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me 페이지입니다.</title>
+<!-- 제이쿼리-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<!-- 테일윈드 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.9/tailwind.min.css">
+<!-- 스크롤트리거 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+<!-- 폰트어썸 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<!-- css 연결 -->
+<link rel="stylesheet" href="about me.css">
+<!-- js 연결 -->
+<script src="common.js" defer></script>
+</head>
+<body>
+  <div id="wrap">
+    <!--  첫번째  -->
+    <div class="sub_c1">
+      <section class="section-2">
+        <div class="text"></div>
+        <div class="switch-effect-1 switch-effect-1-1" data-item-seconds="1500">
+          <ul>
+            <li class="active">배울자세가 되어 있는</li>
+            <li>업무달성의 위한 책임감</li>
+            <li>모든 일에 긍정적인</li>
+            <li>정확하고 신중한</li>
+          </ul>
+        </div>
+        <div class="sub-1_img">
+          <img src="https://i.postimg.cc/BQrm71pq/1.png" alt="">
+        </div>
+        <div class="img-group-2">
+          <img class="img-group-2__img-1" src="https://i.postimg.cc/2yS5WPJg/3.png" alt="">
+          <img class="img-group-2__img-2" src="https://i.postimg.cc/Pf8Jdx2g/2-1.png" alt="">
+          <img class="img-group-2__img-3" src="https://i.postimg.cc/6qY95y1Z/1-1.png" alt="">
+        </div>
+      </section>
+    </div>
+    <!--  두번째  -->
+    <div class="sub_c2">
+      <div class="img_graph">
+        <img src="https://i.postimg.cc/SRTjq6Qp/Vector-14.png" alt="">
+      </div>
+      <section class="Typo">
+        <p class="typo_preface">POSSIBILITY</p>
+        <div>
+          <span>제</span>
+          <span>가</span>
+          <br>
+          <span class="typo_title">누</span>
+          <span class="typo_title">구</span>
+          <span class="typo_title">냐</span>
+          <span class="typo_title">면</span>
+          <span class="typo_title">,</span>
+          <br>
+          <br>
+          <br>
+          <br>
+          <div class="text-title">
+            <ul>
+              <li>
+                <p class="text-3xl font-bold text-title_1">목표를 달성하기 위하여<br>계획을 세워 실행합니다.</p>
+                <br>
+                <p class="text-base font-medium text-title_2">현실적으로 실행 가능한 계획을 세우는 것을 선호합니다.<br>
+                  목표를 달성하는데 필요한 사실을 열거함으로써 재빨리 인지하여 즉시 실행에<br>
+                  옮기고 예리하여 사실에 근거하여 자율적으로 스스로 알아서 행동하고 책임집니다.
+                </p>
+              </li>
+              <br>
+              <br>
+              <li>
+                <p class="text-3xl font-bold text-title_1">모든일에<br>최선을 다합니다.</p>
+                <br>
+                <p class="text-base font-medium text-title_2">자신이 맡은 바 책임을 다하며 목표를 달성하기 위해 시간과 에너지를 허투루 쓰지<br>
+                  않으며 임무 달성을 위한 책임감, 긍정적인 사고를 가지고 있습니다.<br>
+                  이런한 장점으로 필요한 업무를 정확하고 신중하게 처리합니다.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--  세번째  -->
+    <div class="sub_c3">
+      <div class="img-group-3">
+        <img src="https://i.postimg.cc/jqzQcd2f/Group-31.png" alt="">
+      </div>
+      <div class="bar bar1"></div>
+      <div class="bar bar2"></div>
+      <div class="bar bar3"></div>
+      <div class="bar bar4"></div>
+      <div class="bar bar5"></div>
+      <div class="bar bar6"></div>
+      <a href="index.html" class="cta1">
+        <span>HOME</span>
+        <i class="fas fa-arrow-right"></i>
+      </a>
+      <a href="portfolio.html" class="cta2">
+        <span>PORTFOLIO</span>
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+    <!--  우측버튼  -->
+    <i class="far fa-hand-point-down down-click"></i>
+    <div class="contents">
+      <!-- 우측 하단 버튼 -->
+      <div class="main-wrap">
+        <div class="scene-cover"></div>
+        <div class="section-cover" style="height:937px; over-flow:auto;">
+          <div class="btn__floating-wrap">
+            <div class="fixed floating-menu">
+              <div class="plus-link">
+              </div>
+              <div class="absolute hidden btn-inner">
+                <div class="flex flex-col floating-list flxed">
+                  <div class="floating-linker chat">
+                    <a href="about me.html">
+                      <span class="text">ABOUT ME</span>
+                    </a>
+                  </div>
+                  <div class="floating-linker my-collection">
+                    <a href="portfolio.html">
+                      <span class="text">PORTFOLIO</span>
+                    </a>
+                  </div>
+                  <div class="floating-linker store-reservation">
+                    <a href="branding.html">
+                      <span class="text">BRANDING</span>
+                    </a>
+                  </div>
+                  <div class="floating-linker faq">
+                    <a href="EXPERIENCE.html">
+                      <span class="text whitespace-nowrap">EXPERIENCE</span>
+                    </a>
+                  </div>
+                  <div class="floating-linker faq">
+                    <a href="PROCESS.html">
+                      <span class="text whitespace-nowrap">PROCESS</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
