@@ -23,7 +23,7 @@
 }
 
 .part-head > div {
-  padding:20px 0 ;
+  padding:20px 15px ;
 }
 
 .part-head > div:first-child {
@@ -35,7 +35,9 @@
 }
 
 .part-head > .part.active {
-  color:white;
+  width:600px;
+  color:#737373;
+  background-color:white;
 }
 
 
