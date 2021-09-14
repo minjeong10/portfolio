@@ -216,3 +216,9 @@
   left:-9%;
   z-index:999;
 }
+
+.reassuringly {
+  position: absolute;
+  top:55%;
+  left:23%;
+}
