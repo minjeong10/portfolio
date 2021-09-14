@@ -35,7 +35,7 @@
 }
 
 .part-head > .part.active {
-  width:600px;
+  width:550px;
   color:#737373;
   background-color:white;
 }
@@ -68,7 +68,7 @@
 }
 
 .part-body > .part.part-5 {
-  background-color:yellow;
+  background-color:#FFB600;
 }
 
 
@@ -197,7 +197,7 @@
 }
 
 .part-group[data-no="5"] .part-nav > div:nth-child(1) {
-  background-color:yellow;
+  background-color:#FFB600;
 }
 
 /* 가운데부분 */
@@ -206,4 +206,13 @@
   width:1020px;
   height:960px;
   right:-170%;
+}
+
+/* 다섯번째 포트폴리오 */
+
+.space1-img {
+  position:absolute;
+  top:7%;
+  left:-9%;
+  z-index:999;
 }
