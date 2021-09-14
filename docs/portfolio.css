@@ -67,6 +67,11 @@
   background-color:pink;
 }
 
+.part-body > .part.part-5 {
+  background-color:yellow;
+}
+
+
 .part-body > .part.active {
   display:block;
 }
@@ -189,6 +194,10 @@
 
 .part-group[data-no="4"] .part-nav > div:nth-child(1) {
   background-color:pink;
+}
+
+.part-group[data-no="5"] .part-nav > div:nth-child(1) {
+  background-color:yellow;
 }
 
 /* 가운데부분 */
