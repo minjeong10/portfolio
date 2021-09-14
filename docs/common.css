@@ -14,4 +14,6 @@ font-family: 'Oswald', sans-serif;
 }
 body {
 overflow-x:hidden;
+list-style:none;
+text-decoration: none;
 }
