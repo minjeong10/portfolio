@@ -1,5 +1,46 @@
 /*branding js*/
 
+
+/* 첫번째 */
+
+gsap.from(".img12", {
+  ease: Expo.easeIn,
+  opacity: 0,
+  duration: 0.8,
+  scrollTrigger: {
+    trigger: ".img12",
+    markers: false,
+    start: "0 50%"
+  }
+});
+
+
+
+/* 두번째 */
+gsap.from(".sub2-2-minutext", {
+  ease: Expo.easeIn,
+  opacity: 0,
+  duration: 0.4,
+  scrollTrigger: {
+    trigger: ".sub2-2-minutext",
+    markers: false,
+    start: "0 50%"
+  }
+});
+
+gsap.from(".sub2-2_p", {
+  ease: Expo.easeIn,
+  opacity: 0,
+  duration: 0.6,
+  scrollTrigger: {
+    trigger: ".sub2-2_p",
+    markers: false,
+    start: "0 50%"
+  }
+});
+
+
+
 if ( gsap ) {
   gsap.from(".text-img_1", {
     ease: Power0.easeOut,
@@ -117,3 +158,18 @@ if ( gsap ) {
     }
   });
 }
+
+
+/* 여섯번째 */
+
+
+gsap.from(".text-p", {
+  ease: Expo.easeIn,
+  opacity: 0,
+  duration: 0.7,
+  scrollTrigger: {
+    trigger: ".text-p",
+    markers: false,
+    start: "0 50%"
+  }
+});
