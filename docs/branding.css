@@ -34,7 +34,7 @@ li {
 /* 두번째 */
 .sub2-2 {
   position:relative;
-  height:943px;
+  height:930px;
 }
 
 .sub2-2-minutext {
@@ -59,43 +59,73 @@ li {
 .sub2-2-img1 > img {
   position:absolute;
   top:35%;
-  left:15%;
+  left:18%;
+}
+
+.sub2-2-img1 > h1 {
+  position:absolute;
+  top:70%;
+  left:18.5%;
+  color: #737373;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 .sub2-2-img1 > .li {
   position:absolute;
   top:77%;
-  left:41.5%;
+  left:17.5%;
   font-size:20px;
   color:#737373;
+  text-align: center;
 }
 
 .sub2-2-img2 > img {
   position:absolute;
   top:35%;
-  left:40%;
+  left:43%;
+}
+
+.sub2-2-img2 > h1 {
+  position:absolute;
+  top:70%;
+  left:45%;
+  color: #737373;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 .sub2-2-img2 > .li2 {
   position:absolute;
   top:77%;
-  left:67.5%;
+  left:43.3%;
   font-size:20px;
   color:#737373;
+  text-align: center;
 }
 
 .sub2-2-img3 > img {
   position:absolute;
   top:35%;
-  left:65%;
+  left:68%;
+}
+
+.sub2-2-img3 > h1 {
+  position:absolute;
+  top:70%;
+  left:72%;
+  color: #737373;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 .sub2-2-img3 > .li3 {
   position:absolute;
   top:77%;
-  left:17%;
+  left:68.5%;
   font-size:20px;
   color:#737373;
+  text-align: center;
 }
 
 
