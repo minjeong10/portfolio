@@ -62,7 +62,7 @@
 }
 
 .part-body > .part.part-4 {
-  background-color:pink;
+  background-color:#282834;
 }
 
 .part-body > .part.part-5 {
@@ -197,7 +197,7 @@
 }
 
 .part-group[data-no="4"] .part-nav > div:nth-child(1) {
-  background-color:pink;
+  background-color:#282834;
 }
 
 .part-group[data-no="5"] .part-nav > div:nth-child(1) {
@@ -371,6 +371,165 @@
 .btn9:hover::after, .btn9:hover::after{
   opacity:1;
   width: 120%;
+}
+
+/* 네번째 포트폴리오 */
+
+.mockup-img {
+  width:700px;
+  height:auto;
+  margin-top:18%; 
+  margin-left:-9%;
+}
+
+.img-full {
+position: absolute;
+background-image: url(img/portfolio/main1.png);
+background-size: cover;
+background-position: top;
+background-repeat: no-repeat;
+height:38%;
+width:62%;
+left:-5.8%;
+top:22.6%;
+transition:background-position 4s;
+}
+
+.img-full1:hover {
+background-position: bottom;
+}
+
+
+.part-4-text {
+position: absolute;
+top:24%;
+left:63%;
+}
+
+.part-4-text > h1 {
+color: #282834;
+font-size: 25px;
+font-family: "S-CoreDream-9Black";
+}
+
+.part-4-text > h2 {
+color: #000000;
+font-size: 40px;
+font-weight: 700;
+font-family: "S-CoreDream-9Black";
+}
+
+.part-4-text > .font-11 {
+color: #A1A1A1;
+font-size: 12px;
+}
+
+.part-4-text > li {
+font-size: 14px;
+font-weight: bold;
+color: #737373;
+}
+
+/* 세번째 버튼부분 */
+
+.wrapper {
+text-align: center;
+position: relative;
+}
+
+.btn8{
+padding: 15px 70px;
+color: #737373;
+font-family: sans-serif;
+text-transform: uppercase;
+text-align: center;
+position: relative;
+text-decoration: none;
+display:inline-block;
+margin-top:-1%;
+left:-25%;
+}
+
+
+/* Btn 8  */
+.btn8{
+top: 40px;
+font-family: "proxima-nova", sans-serif;
+font-weight: 500;
+font-size: 16px;
+font-weight:bold;
+text-transform: uppercase!important;
+letter-spacing: 2px;
+color:#282834;
+cursor: hand;
+text-align: center;
+text-transform: capitalize;
+border: 3px solid #282834;
+border-radius:50px;
+position: relative;
+overflow: hidden!important;
+-webkit-transition: all .3s ease-in-out;
+-moz-transition: all .3s ease-in-out;
+-o-transition: all .3s ease-in-out;
+transition: all .3s ease-in-out;
+background: transparent!important;
+z-index:10;
+
+}
+
+
+.btn8:hover{
+border: 3px solid #282834;
+color: #fff!important;
+}
+.btn8::before {
+content: '';
+width: 0%;
+height: 100%;
+display: block;
+background: #282834;
+position: absolute;
+-ms-transform: skewX(-20deg);
+-webkit-transform: skewX(-20deg); 
+transform: skewX(-20deg);   
+left: -10%;
+opacity: 1;
+top: 0;
+z-index: -12;
+-moz-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+-o-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+-webkit-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+box-shadow:2px 0px 14px rgba(0,0,0,.6);
+} 
+
+.btn8::after {
+content: '';
+width: 0%;
+height: 100%;
+display: block;
+background: #FFFCF5;
+position: absolute;
+-ms-transform: skewX(-20deg);
+-webkit-transform: skewX(-20deg); 
+transform: skewX(-20deg);   
+left: -10%;
+opacity: 0;
+top: 0;
+z-index: -15;
+-webkit-transition: all .94s cubic-bezier(.2,.95,.57,.99);
+-moz-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+-o-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+transition: all .4s cubic-bezier(.2,.95,.57,.99);
+box-shadow: 2px 0px 14px rgba(0,0,0,.6);
+}
+.btn8:hover::before, .btn8:hover::before{
+opacity:1;
+width: 116%;
+}
+.btn8:hover::after, .btn8:hover::after{
+opacity:1;
+width: 120%;
 }
 
 /* 다섯번째 포트폴리오 */
