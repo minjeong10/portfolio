@@ -2,96 +2,117 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>portfolio 페이지입니다.</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.9/tailwind.min.css">
-  <!-- 폰트어썸 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <!-- 공통 css 연결 -->
-  <link rel="stylesheet" href="common.css">
-  <!-- css 연결 -->
-  <link rel="stylesheet" href="portfolio.css">
-  <!-- 공통 js 연결 -->
-  <script src="common.js" defer></script>
-  <!-- 포트폴리오 전용 js -->
-  <script src="portfolio.js" defer></script>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>portfolio 페이지입니다.</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.9/tailwind.min.css">
+<!-- 폰트어썸 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<!-- 공통 css 연결 -->
+<link rel="stylesheet" href="common.css">
+<!-- css 연결 -->
+<link rel="stylesheet" href="portfolio.css">
+<!-- 공통 js 연결 -->
+<script src="common.js" defer></script>
+<!-- 포트폴리오 전용 js -->
+<script src="portfolio.js" defer></script>
 </head>
 
 <body>
-  <section class="section section-1">
-    <div class="part-group">
-      <div class="part-head">
-        <!-- 개인 웹사이트 -->
-        <div class="part part-1" onmouseenter="Part__showPart(1);">01 PERSONAL WEBSITE</div>
-        <!-- 반응형 웹 사이트 -->
-        <div class="part part-2" onmouseenter="Part__showPart(2);">02 Responsive Website</div>
-        <!-- 웹 퍼블리싱 -->
-        <div class="part part-3" onmouseenter="Part__showPart(3);">03 adaptive web</div>
-        <!-- 웹 사이트 리뉴얼 -->
-        <div class="part part-4" onmouseenter="Part__showPart(4);">04 Website renewal</div>
-        <!-- 모바일 ui&ux -->
-        <div class="part part-5" onmouseenter="Part__showPart(5);">05 MOBILE UI&UX</div>
+<section class="section section-1">
+  <div class="part-group">
+    <div class="part-head">
+      <!-- 개인 웹사이트 -->
+      <div class="part part-1" onmouseenter="Part__showPart(1);">01 PERSONAL WEB</div>
+      <!-- 반응형 웹 사이트 -->
+      <div class="part part-2" onmouseenter="Part__showPart(2);">02 RESPONSIVE WEB</div>
+      <!-- 웹 퍼블리싱 -->
+      <div class="part part-3" onmouseenter="Part__showPart(3);">03 ADAPTIVE WEB</div>
+      <!-- 웹 사이트 리뉴얼 -->
+      <div class="part part-4" onmouseenter="Part__showPart(4);">04 WEBSITE RENEWAL</div>
+      <!-- 모바일 ui&ux -->
+      <div class="part part-5" onmouseenter="Part__showPart(5);">05 MOBILE UI&UX</div>
+    </div>
+    <div class="part-nav">
+      <div class="btn-left" onclick="Part__showPartPrev();">
+        <span><i class="fas fa-angle-up"></i></span>
       </div>
-      <div class="part-nav">
-        <div class="btn-left" onclick="Part__showPartPrev();">
-          <span><i class="fas fa-angle-up"></i></span>
-        </div>
-        <div class="btn-right" onclick="Part__showPartNext();">
-          <span><i class="fas fa-angle-down"></i></span>
+      <div class="btn-right" onclick="Part__showPartNext();">
+        <span><i class="fas fa-angle-down"></i></span>
+      </div>
+    </div>
+    <div class="part-body">
+      <div class="part part-1">
+        <div class="space"></div>
+        <div class="right-bg bg-top-to-bttom" style="background-image:url(https://picsum.photos/id/137/1000/1500);">
         </div>
       </div>
-      <div class="part-body">
-        <div class="part part-1">
-          <div class="space"></div>
-          <div class="right-bg bg-top-to-bttom" style="background-image:url(https://picsum.photos/id/137/1000/1500);">
-          </div>
+      <div class="part part-2">
+        <div class="space"></div>
+        <div class="right-bg bg-bottom-to-top" style="background-image:url(https://picsum.photos/id/117/1000/1500);">
         </div>
-        <div class="part part-2">
-          <div class="space"></div>
-          <div class="right-bg bg-bottom-to-top" style="background-image:url(https://picsum.photos/id/117/1000/1500);">
-          </div>
-        </div>
-        <div class="part part-3">
-          <div class="space"></div>
-          <div class="right-bg bg-left-to-right" style="background-image:url(https://picsum.photos/id/139/1000/1500);">
-          </div>
-        </div>
-        <div class="part part-4">
-          <div class="space"></div>
-          <div class="right-bg bg-right-to-left" style="background-image:url(https://picsum.photos/id/140/1000/1500);">
-          </div>
-        </div>
-        <div class="part part-5">
-          <div class="space">
-            <a href="#"><img src="img/portfolio/맛경찰 모바일 1.png" alt="1" class="space1-img"></a>
-            <img src="img/portfolio/든든이.png" alt="든든이" class="reassuringly">
-            <div class="part-5-text">
-              <img src="img/portfolio/MOBILE UI&UX.png" alt="MOBILE-UI-UX">
-              <h1>맛경찰</h1>
-              <li class="font-li">작업기간 : 2021년 7월 26일 ~ 2021년 08월 03일 </li>
-              <li class="font-li">작업 툴 : 포토샵, 일러스트, 피그마</li>
-              <br>
-              <li class="font-text">무엇을 먹을지 고민하는 사람들이 늘어나면서 다양한 맛집을 소개하는 어플이<br>생겼습니다. 여러 어플을 사용하면서 아쉬운 기능들이 있었고, 이러한 아쉬움<br>
-                들을 개선하기 위하여 맛집 소개 어플 '맛경찰'을 기획하였습니다.<br>‘맛경찰’만의 캐릭터를 만들어 어플의 퀄리티를 높히려 하였고, 단점을 최소화<br>
-                하고 장점을 부각시켜 불필요한 기능은 과감하게 빼고 필요한 기능들을 넣어<br>어플의 활용성을 높히는데에 중점을 두었습니다.</li>
-            </div>
-            <img src="img/portfolio/도둑1 1.png" alt="출출이" class="going">
+      </div>
+      <div class="part part-3">
+        <div class="space">
+        <img src="img/portfolio/mockup.png" alt="목업이미지" class="mockup-img">
+          <div class="img-full1"></div>
+        <div class="part-3-text">
+          <img src="img/portfolio/03 ADAPTIVE WEB.png" alt="">
+          <br>
+          <h1>2020세이브더칠드런</h1>
+          <h2>국제어린이마라톤</h2>
+          <br>
+          <li class="font-11">작업기간 : 2021년 6월 15일 ~ 2021년 06월 23일 </li>
+          <li class="font-11">작업 툴 : codepen</li>
+          <br>
+          <li>현재는 리뉴얼 되어 디자인과 레이아웃이 변경되어 있지만<br>리뉴얼되기
+            전의 홈페이지를 구현하였고 , 메인 컬러인 레<br>드를 사용하였습니다. </li>
             <div class="wrapper">
-              <a href="#0" class="btn10">
-                   <span>view</span>
+              <a href="https://to2.kr/c8X" target="_blank" class="btn9">
+                    <span>view</span>
                 <div class="transition"></div>
               </a>
               </div>
+        </div>
+        </div>
+        <div class="right-bg bg-left-to-right" style="background-image:url(https://picsum.photos/id/139/1000/1500);">
+        </div>
+      </div>
+      <div class="part part-4">
+        <div class="space"></div>
+        <div class="right-bg bg-right-to-left" style="background-image:url(https://picsum.photos/id/140/1000/1500);">
+        </div>
+      </div>
+      <div class="part part-5">
+        <div class="space">
+          <a href="#"><img src="img/portfolio/맛경찰 모바일 1.png" alt="1" class="space1-img"></a>
+          <img src="img/portfolio/든든이.png" alt="든든이" class="reassuringly">
+          <div class="part-5-text">
+            <img src="img/portfolio/MOBILE UI&UX.png" alt="MOBILE-UI-UX">
+            <h1>맛경찰</h1>
+            <li class="font-li">작업기간 : 2021년 7월 26일 ~ 2021년 08월 03일 </li>
+            <li class="font-li">작업 툴 : 포토샵, 일러스트, 피그마</li>
+            <br>
+            <li class="font-text">무엇을 먹을지 고민하는 사람들이 늘어나면서 다양한 맛집을 소개하는 어플이<br>생겼습니다. 여러 어플을 사용하면서 아쉬운 기능들이 있었고, 이러한 아쉬움<br>
+              들을 개선하기 위하여 맛집 소개 어플 '맛경찰'을 기획하였습니다.<br>‘맛경찰’만의 캐릭터를 만들어 어플의 퀄리티를 높히려 하였고, 단점을 최소화<br>
+              하고 장점을 부각시켜 불필요한 기능은 과감하게 빼고 필요한 기능들을 넣어<br>어플의 활용성을 높히는데에 중점을 두었습니다.</li>
           </div>
-          <div class="right-bg bg-right-to-left" style="background-image:url(https://i.ibb.co/vvR1BXf/img.png);">
-          </div>
+          <img src="img/portfolio/도둑1 1.png" alt="출출이" class="going">
+          <div class="wrapper">
+            <a href="#0" class="btn10">
+                  <span>view</span>
+              <div class="transition"></div>
+            </a>
+            </div>
+        </div>
+        <div class="right-bg bg-right-to-left" style="background-image:url(https://i.ibb.co/vvR1BXf/img.png);">
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 </body>
 
 </html>
