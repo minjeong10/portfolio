@@ -14,9 +14,9 @@
 .part-head {
   position:absolute;
   top:50%;
-  left:50px;
+  left:80px;
   transform:translateY(-50%);
-  font-size:2rem;
+  font-size:1.5rem;
   font-weight:bold;
   color:white;
   z-index:100;
@@ -36,13 +36,13 @@
 }
 
 .part-head > .part.active:nth-child(3) {
-  width: 403px;
+  width: 353px;
 }
 
 /* 이미지 움직이기 */
 
 .part-body > .part {
-  width:600px;
+  width:570px;
   height:960px;
   min-height:960px;
   display:none;
@@ -79,7 +79,7 @@
   top:0;
   width:283px;
   height:100%;
-  right:-217.2%;
+  right:-230%;
   animation-duration:10s;
   animation-timing-function: linear;
   animation-direction: alternate;
@@ -153,8 +153,8 @@
   display:flex;
   position:absolute;
   width:200px;
-  top:600px;
-  right:300px;
+  top:700px;
+  right:321px;
   transform:translateX(50%);
   z-index:10;
   cursor:pointer;
@@ -212,13 +212,15 @@
   right:-170%;
 }
 
+
+
 /* 세번째 포트폴리오 */
 
 .mockup-img {
     width:700px;
     height:auto;
-    margin-top:15%; 
-    margin-left:-15%;
+    margin-top:18%; 
+    margin-left:-9%;
 }
 
 .img-full1 {
@@ -229,8 +231,8 @@
   background-repeat: no-repeat;
   height:38%;
   width:62%;
-  left:-11.75%;
-  top:20.2%;
+  left:-5.8%;
+  top:22.6%;
   transition:background-position 4s;
 }
 
@@ -241,30 +243,30 @@
 
 .part-3-text {
   position: absolute;
-  top:23%;
-  left:55%;
+  top:24%;
+  left:63%;
 }
 
 .part-3-text > h1 {
   color: #ED1B24;
-  font-size: 30px;
+  font-size: 25px;
   font-family: "S-CoreDream-9Black";
 }
 
 .part-3-text > h2 {
   color: #000000;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 700;
   font-family: "S-CoreDream-9Black";
 }
 
 .part-3-text > .font-11 {
   color: #A1A1A1;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .part-3-text > li {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   color: #737373;
 }
@@ -375,7 +377,7 @@
 
 .space1-img {
   position:absolute;
-  top:7%;
+  top:6%;
   left:-12%;
   z-index:999;
 }
@@ -383,14 +385,14 @@
 .reassuringly {
   position: absolute;
   top:55%;
-  left:20%;
+  left:18%;
 }
 
 .part-5-text {
   position: relative;
   float:right;
-  top: 13%;
-  right: 8%;
+  top: 20%;
+  right: 10%;
 }
 
 .part-5-text > h1 {
@@ -400,18 +402,18 @@
 }
 
 .part-5-text > .font-li {
-  font-size: 14px;
+  font-size: 12px;
   color: #a1a1a1;
 }
 
 .part-5-text > .font-text {
-  font-size: 16px;
+  font-size: 14px;
   color: #737373;
 }
 
 .going {
   position: absolute;
-  margin-left:90%;
+  margin-left:95%;
 
 }
 
@@ -432,8 +434,8 @@
   position: relative;
   text-decoration: none;
   display:inline-block;
-  margin-top:52%;
-  left: 24%;
+  margin-top:60%;
+  left: 26%;
 }
 
 
