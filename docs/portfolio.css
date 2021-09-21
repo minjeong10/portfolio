@@ -35,7 +35,15 @@
   background-color:white;
 }
 
+.part-head > .part.active:nth-child(1) {
+  width: 353px;
+}
+
 .part-head > .part.active:nth-child(3) {
+  width: 353px;
+}
+
+.part-head > .part.active:nth-child(4) {
   width: 353px;
 }
 
@@ -50,7 +58,7 @@
 }
 
 .part-body > .part.part-1 {
-  background-color:darkgreen;
+  background-color:#F2D4C1;
 }
 
 .part-body > .part.part-2 {
@@ -185,7 +193,7 @@
 }
 
 .part-group[data-no="1"] .part-nav > div:nth-child(1) {
-  background-color:darkgreen;
+  background-color:#F2D4C1;
 }
 
 .part-group[data-no="2"] .part-nav > div:nth-child(1) {
@@ -210,6 +218,158 @@
   width:1020px;
   height:960px;
   right:-170%;
+}
+/* 첫번째 포트폴리오 */
+
+.mockup-img {
+  width:700px;
+  height:auto;
+  margin-top:18%; 
+  margin-left:-9%;
+}
+
+.part-1 .img-full1 {
+position: absolute;
+background-image: url(img/portfolio/개인포트폴리오\ 메인\ 첫번째.png);
+background-size: cover;
+background-position: top;
+background-repeat: no-repeat;
+height:38%;
+width:62%;
+left:-5.8%;
+top:22.6%;
+transition:background-position 4s;
+}
+
+.img-full1:hover {
+background-position: bottom;
+}
+
+
+.part-3-text {
+position: absolute;
+top:24%;
+left:63%;
+}
+
+.part-3-text > h2 {
+color: #000000;
+font-size: 40px;
+font-weight: 700;
+font-family: "S-CoreDream-9Black";
+}
+
+.part-3-text > .font-11 {
+color: #A1A1A1;
+font-size: 12px;
+}
+
+.part-3-text > li {
+font-size: 14px;
+font-weight: bold;
+color: #737373;
+}
+
+/* 첫번째 버튼부분 */
+
+.wrapper {
+text-align: center;
+position: relative;
+}
+
+.btn6{
+padding: 15px 70px;
+color: #737373;
+font-family: sans-serif;
+text-transform: uppercase;
+text-align: center;
+position: relative;
+text-decoration: none;
+display:inline-block;
+margin-top:-1%;
+left:-25%;
+}
+
+
+/* Btn 9  */
+.btn6{
+top: 40px;
+font-family: "proxima-nova", sans-serif;
+font-weight: 500;
+font-size: 16px;
+font-weight:bold;
+text-transform: uppercase!important;
+letter-spacing: 2px;
+color:#F2D4C1;
+cursor: hand;
+text-align: center;
+text-transform: capitalize;
+border: 3px solid #F2D4C1;
+border-radius:50px;
+position: relative;
+overflow: hidden!important;
+-webkit-transition: all .3s ease-in-out;
+-moz-transition: all .3s ease-in-out;
+-o-transition: all .3s ease-in-out;
+transition: all .3s ease-in-out;
+background: transparent!important;
+z-index:10;
+
+}
+
+
+.btn6:hover{
+border: 3px solid #F2D4C1;
+color: #fff!important;
+}
+.btn6::before {
+content: '';
+width: 0%;
+height: 100%;
+display: block;
+background: #F2D4C1;
+position: absolute;
+-ms-transform: skewX(-20deg);
+-webkit-transform: skewX(-20deg); 
+transform: skewX(-20deg);   
+left: -10%;
+opacity: 1;
+top: 0;
+z-index: -12;
+-moz-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+-o-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+-webkit-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+box-shadow:2px 0px 14px rgba(0,0,0,.6);
+} 
+
+.btn6::after {
+content: '';
+width: 0%;
+height: 100%;
+display: block;
+background: #FFFCF5;
+position: absolute;
+-ms-transform: skewX(-20deg);
+-webkit-transform: skewX(-20deg); 
+transform: skewX(-20deg);   
+left: -10%;
+opacity: 0;
+top: 0;
+z-index: -15;
+-webkit-transition: all .94s cubic-bezier(.2,.95,.57,.99);
+-moz-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+-o-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+transition: all .4s cubic-bezier(.2,.95,.57,.99);
+box-shadow: 2px 0px 14px rgba(0,0,0,.6);
+}
+.btn6:hover::before, .btn6:hover::before{
+opacity:1;
+width: 116%;
+}
+.btn6:hover::after, .btn6:hover::after{
+opacity:1;
+width: 120%;
 }
 
 
@@ -382,7 +542,7 @@
   margin-left:-9%;
 }
 
-.img-full {
+.part-4 .img-full {
 position: absolute;
 background-image: url(img/portfolio/main1.png);
 background-size: cover;
@@ -390,7 +550,7 @@ background-position: top;
 background-repeat: no-repeat;
 height:38%;
 width:62%;
-left:-5.8%;
+left:-5.7%;
 top:22.6%;
 transition:background-position 4s;
 }
@@ -430,7 +590,7 @@ font-weight: bold;
 color: #737373;
 }
 
-/* 세번째 버튼부분 */
+/* 네번째 버튼부분 */
 
 .wrapper {
 text-align: center;
@@ -536,15 +696,16 @@ width: 120%;
 
 .space1-img {
   position:absolute;
-  top:6%;
-  left:-12%;
+  width:350px;
+  top:10%;
+  left:-5%;
   z-index:999;
 }
 
 .reassuringly {
   position: absolute;
-  top:55%;
-  left:18%;
+  top:50%;
+  left:22%;
 }
 
 .part-5-text {
