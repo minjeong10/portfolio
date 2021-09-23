@@ -703,13 +703,13 @@ width: 120%;
 
 .part-4 .img-full {
 position: absolute;
-background-image: url(img/portfolio/main1.png);
+background-image: url(https://i.postimg.cc/KvwxHrFx/main1.png);
 background-size: cover;
 background-position: top;
 background-repeat: no-repeat;
 height:38%;
 width:62%;
-left:-5.7%;
+left:-5.6%;
 top:22.6%;
 transition:background-position 4s;
 }
