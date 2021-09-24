@@ -757,7 +757,7 @@ position: relative;
 }
 
 .btn8{
-padding: 15px 70px;
+padding: 15px 50px;
 color: #737373;
 font-family: sans-serif;
 text-transform: uppercase;
@@ -766,7 +766,7 @@ position: relative;
 text-decoration: none;
 display:inline-block;
 margin-top:-1%;
-left:-25%;
+left:-10%;
 }
 
 
@@ -850,6 +850,101 @@ width: 116%;
 opacity:1;
 width: 120%;
 }
+
+/* 8-1 */
+
+.btn8-1{
+  padding: 15px 50px;
+  color: #737373;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  display:inline-block;
+  margin-top:-1%;
+  left:-5%;
+  }
+  
+  .btn8-1{
+  top: 40px;
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  font-weight:bold;
+  text-transform: uppercase!important;
+  letter-spacing: 2px;
+  color:#282834;
+  cursor: hand;
+  text-align: center;
+  text-transform: capitalize;
+  border: 3px solid #282834;
+  border-radius:50px;
+  position: relative;
+  overflow: hidden!important;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  background: transparent!important;
+  z-index:10;
+  
+  }
+  
+  
+  .btn8-1:hover{
+  border: 3px solid #282834;
+  color: #fff!important;
+  }
+  .btn8-1::before {
+  content: '';
+  width: 0%;
+  height: 100%;
+  display: block;
+  background: #282834;
+  position: absolute;
+  -ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg); 
+  transform: skewX(-20deg);   
+  left: -10%;
+  opacity: 1;
+  top: 0;
+  z-index: -12;
+  -moz-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+  box-shadow:2px 0px 14px rgba(0,0,0,.6);
+  } 
+  
+  .btn8-1::after {
+  content: '';
+  width: 0%;
+  height: 100%;
+  display: block;
+  background: #FFFCF5;
+  position: absolute;
+  -ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg); 
+  transform: skewX(-20deg);   
+  left: -10%;
+  opacity: 0;
+  top: 0;
+  z-index: -15;
+  -webkit-transition: all .94s cubic-bezier(.2,.95,.57,.99);
+  -moz-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+  -o-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+  transition: all .4s cubic-bezier(.2,.95,.57,.99);
+  box-shadow: 2px 0px 14px rgba(0,0,0,.6);
+  }
+  .btn8-1:hover::before, .btn8-1:hover::before{
+  opacity:1;
+  width: 116%;
+  }
+  .btn8-1:hover::after, .btn8-1:hover::after{
+  opacity:1;
+  width: 120%;
+  }
 
 /* 다섯번째 포트폴리오 */
 
