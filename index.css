@@ -1,0 +1,148 @@
+
+.site-wrap {
+width: 1920px;
+margin: 0 auto;
+}
+
+.section-1 {
+height: 1080px;
+background-image: url(https://i.postimg.cc/hDSk3KMB/Group-29-1.png);
+background-repeat: no-repeat;
+background-size: auto 90%;
+background-position: center;
+background-color: inherit;
+position: relative;
+}
+
+.img-group-1 > * {
+position:absolute;
+pointer-events: none;
+}
+
+
+.img-group-1__img-1 {
+position: absolute;
+top: calc(50% - 50%);
+left: calc(50% - 53%);
+}
+
+.img-group-1__img-2 {
+position: absolute;
+top: calc(50% - 30%);
+left: calc(50% - 50%);
+}
+
+.img-group-1__img-3 {
+position: absolute;
+top: calc(50% - -11%);
+left: calc(50% - 50%);
+z-index:-1;
+}
+
+.img-group-1__img-4 {
+position: absolute;
+top: calc(50% - 50%);
+left: calc(50% - -25%);
+}
+
+.img-group-1__img-5 {
+position: absolute;
+top: calc(50% - -16%);
+left: calc(50% - -26%);
+transform: rotate(5deg);
+z-index:2;
+}
+
+/* 로고 */
+.logo {
+position:absolute;
+width: 92px;
+height: 84px;
+top: calc(50% - 10%);
+left: calc(50% - -34%);
+cursor: pointer;
+transition:opacity 0.5s;
+}
+
+.close {
+position:absolute;
+width:50px;
+height:50px;
+top: calc(50% - 8.5%);
+left: calc(50% - -35%);
+cursor: pointer;
+opacity:0;
+visibility:hidden;
+z-index:9999;
+transition:opacity 0.5s;
+}
+
+/* 메뉴 */
+.navwrap {
+position:absolute;
+background-color: white;
+width: 537px;
+height: 616px;
+margin-top:10%;
+margin-left:61%;
+visibility:hidden;
+opacity:0;
+z-index:1;
+}
+
+.navwrap.active {
+visibility: visible;
+opacity: 1;
+}
+
+.navwrap > .nav {
+width: 100%;
+height: 100%;
+}
+
+.navwrap > .nav > ul {
+height:100%;
+}
+
+.navwrap > .nav > ul > li {
+margin-left:25px;
+padding:45px;
+}
+
+.navwrap > .nav > ul > li > a {
+position:relative;
+}
+
+.navwrap > .nav > ul > li > a > img {
+display:block;
+pointer-events: none;
+transition: opacity 0.5s;
+top:0;
+}
+
+.navwrap > .nav > ul > li > a > img:last-child {
+position:absolute;
+opacity:0;
+}
+
+.navwrap > .nav > ul > li > a:hover > img:first-child {
+position:absolute;
+opacity:0;
+}
+
+.navwrap > .nav > ul > li > a:hover > img:last-child {
+position:static;
+opacity:1;
+}
+
+
+/* 로고버튼 & 닫기버튼 */
+.logo.active {
+opacity:0;
+visibility:hidden;
+}
+
+.close.active {
+opacity:1;
+visibility:visible;
+}
