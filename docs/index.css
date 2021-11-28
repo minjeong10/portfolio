@@ -87,7 +87,7 @@ margin-top:10%;
 margin-left:61%;
 visibility:hidden;
 opacity:0;
-z-index:1;
+z-index:10;
 }
 
 .navwrap.active {
@@ -145,4 +145,44 @@ visibility:hidden;
 .close.active {
 opacity:1;
 visibility:visible;
+}
+
+/* 화살표 */
+.down-click {
+  position: absolute;
+  font-size: 2rem;
+  animation-name: click;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-delay: 0;
+  opacity: 1;
+  right:230px;
+  bottom:1500px;
+  visibility:visible;
+  color:#0D2B3E;
+  z-index: 9;
+  transform: rotate(180deg);
+  color:black;
+}
+
+@keyframes click {
+
+  0% {
+    top: 60%;
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+
+  50% {
+    top: 68%;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+
+  100% {
+    top: 60%;
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+
 }
