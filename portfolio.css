@@ -16,40 +16,54 @@
   top:50%;
   left:80px;
   transform:translateY(-50%);
-  font-size:1.5rem;
-  font-weight:bold;
+  font-size:20px;
+  font-weight:bolder;
   color:white;
   z-index:100;
   cursor:pointer;
 }
 
 .part-head > div {
-  padding:20px 15px;
+  padding:15px 20px;
 }
 
 
 
 .part-head > .part.active {
-  width:430px;
+  width:354px;
+  height:55px;
   color:black;
   background-color:white;
 }
 
 .part-head > .part.active:nth-child(1) {
-  width: 353px;
+  width: 354px;
 }
 
 .part-head > .part.active:nth-child(2) {
-  width: 353px;
+  width: 354px;
 }
 
 
 .part-head > .part.active:nth-child(3) {
-  width: 353px;
+  width: 354px;
 }
 
 .part-head > .part.active:nth-child(4) {
-  width: 353px;
+  width: 354px;
+}
+
+.part-head > .part.active:nth-child(5) {
+  width: 354px;
+}
+
+
+.part-head > .part.active:nth-child(6) {
+  width: 354px;
+}
+
+.part-head > .part.active:nth-child(7) {
+  width: 354px;
 }
 
 /* 이미지 움직이기 */
@@ -63,11 +77,11 @@
 }
 
 .part-body > .part.part-1 {
-  background-color:#F2D4C1;
+  background-color:#41478F;
 }
 
 .part-body > .part.part-2 {
-  background-color:#CD2E56;
+  background-color:#EC268F;
 }
 
 .part-body > .part.part-3 {
@@ -90,9 +104,9 @@
 .part-body > .part .right-bg {
   position:absolute;
   top:0;
-  width:283px;
+  width:164px;
   height:100%;
-  right:-233%;
+  right:-234%;
   animation-duration:10s;
   animation-timing-function: linear;
   animation-direction: alternate;
@@ -167,7 +181,7 @@
   position:absolute;
   width:200px;
   top:700px;
-  right:305px;
+  right:9.4%;
   transform:translateX(50%);
   z-index:10;
   cursor:pointer;
@@ -198,11 +212,11 @@
 }
 
 .part-group[data-no="1"] .part-nav > div:nth-child(1) {
-  background-color:#F2D4C1;
+  background-color:#41478F;
 }
 
 .part-group[data-no="2"] .part-nav > div:nth-child(1) {
-  background-color:#CD2E56;
+  background-color:#EC268F;
 }
 
 .part-group[data-no="3"] .part-nav > div:nth-child(1) {
@@ -216,6 +230,21 @@
 .part-group[data-no="5"] .part-nav > div:nth-child(1) {
   background-color:#FFB600;
 }
+
+.part-group[data-no="6"] .part-nav > div:nth-child(1) {
+  background-color:#FFB600;
+}
+
+.part-group[data-no="7"] .part-nav > div:nth-child(1) {
+  background-color:#FFB600;
+}
+
+.part-group[data-no="8"] .part-nav > div:nth-child(1) {
+  background-color:#FFB600;
+}
+
+
+
 
 /* 가운데부분 */
 .space {
@@ -235,7 +264,7 @@
 
 .part-1 .img-full1 {
 position: absolute;
-background-image: url(img/portfolio/개인포트폴리오\ 메인\ 첫번째.png);
+background-image: url(img/portfolio/img1.png);
 background-size: cover;
 background-position: top;
 background-repeat: no-repeat;
@@ -253,13 +282,13 @@ background-position: bottom;
 
 .part-3-text {
 position: absolute;
-top:24%;
+top:20%;
 left:63%;
 }
 
 .part-3-text > h2 {
 color: #000000;
-font-size: 40px;
+font-size: 36px;
 font-weight: 700;
 font-family: "S-CoreDream-9Black";
 }
@@ -270,7 +299,7 @@ font-size: 12px;
 }
 
 .part-3-text > li {
-font-size: 14px;
+font-size: 12px;
 font-weight: bold;
 color: #737373;
 }
@@ -292,7 +321,7 @@ position: relative;
 text-decoration: none;
 display:inline-block;
 margin-top:-1%;
-left:-25%;
+left:-20%;
 }
 
 
@@ -305,11 +334,11 @@ font-size: 16px;
 font-weight:bold;
 text-transform: uppercase!important;
 letter-spacing: 2px;
-color:#F2D4C1;
+color:#FB454C;
 cursor: hand;
 text-align: center;
 text-transform: capitalize;
-border: 3px solid #F2D4C1;
+border: 3px solid #FB454C;
 border-radius:50px;
 position: relative;
 overflow: hidden!important;
@@ -324,7 +353,7 @@ z-index:10;
 
 
 .btn6:hover{
-border: 3px solid #F2D4C1;
+border: 3px solid #FB454C;
 color: #fff!important;
 }
 .btn6::before {
@@ -332,7 +361,7 @@ content: '';
 width: 0%;
 height: 100%;
 display: block;
-background: #F2D4C1;
+background: #FB454C;
 position: absolute;
 -ms-transform: skewX(-20deg);
 -webkit-transform: skewX(-20deg); 
@@ -389,7 +418,7 @@ width: 120%;
 
 .part-2 .img-full1 {
 position: absolute;
-background-image: url(img/portfolio/lgimg.png);
+background-image: url(img/portfolio/img2.png);
 background-size: cover;
 background-position: top;
 background-repeat: no-repeat;
@@ -952,7 +981,7 @@ width: 120%;
   position:absolute;
   width:350px;
   top:10%;
-  left:-5%;
+  left:-9%;
   z-index:999;
 }
 
@@ -987,7 +1016,7 @@ width: 120%;
 
 .going {
   position: absolute;
-  margin-left:97%;
+  margin-left:106%;
 
 }
 
